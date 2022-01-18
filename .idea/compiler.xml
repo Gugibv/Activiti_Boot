@@ -12,12 +12,14 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activiti-boot" target="1.8" />
-      <module name="activiti_start" target="1.5" />
+      <module name="activiti_start" target="6" />
+      <module name="activity_boot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="activiti-boot" options="-parameters" />
+      <module name="activity_boot" options="-parameters" />
     </option>
   </component>
 </project>
