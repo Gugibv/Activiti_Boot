@@ -1,5 +1,6 @@
 package com.grey.workflow.test;
 // 包名需要与 WorkFlowApplication.java 的位置一致，否则 @Autowired 会报错
+// 测试类和启动类要同级别
 
 
 import org.activiti.engine.ProcessEngine;
