@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activiti-boot" target="1.8" />
+      <module name="activiti_explor" target="1.5" />
       <module name="activiti_start" target="6" />
       <module name="activity_boot" target="1.8" />
     </bytecodeTargetLevel>

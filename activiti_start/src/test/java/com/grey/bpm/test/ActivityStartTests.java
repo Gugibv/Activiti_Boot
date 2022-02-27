@@ -253,7 +253,7 @@ public class ActivityStartTests {
     public void findHisToryInfo(){
         // 获取引擎
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-        // 获取 historyservice
+         // 获取 historyservice
         HistoryService historyService = processEngine.getHistoryService();
         // 获取 actinst表的查询对象
         HistoricActivityInstanceQuery instanceQuery =  historyService.createHistoricActivityInstanceQuery();
