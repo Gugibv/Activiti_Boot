@@ -26,7 +26,9 @@ public class ModelController {
     @Autowired
     ObjectMapper objectMapper;
 
-    @GetMapping("/create") // /workflow/model/create
+    // http://localhost:8080/workflow/model/create
+    // 用户名：user , 密码（password）在控制台有输出
+    @GetMapping("/create")
     public void create(HttpServletRequest request, HttpServletResponse response) {
         try {
             String name = "请假流程模型";
