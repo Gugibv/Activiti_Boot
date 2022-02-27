@@ -1,5 +1,5 @@
 server:
-  port: 9090
+  port: 8080
   servlet:
     context-path: /workflow
     session:
@@ -56,3 +56,4 @@ logging:
     org.activiti.engine.impl.persistence.entity: debug
     # 注意：写自己的 mapper 所在完整包名
     com.mengxuegu.workflow.mapper: debug
+
