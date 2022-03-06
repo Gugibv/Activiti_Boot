@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9090
   servlet:
     context-path: /workflow
     session:
@@ -13,7 +13,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/activiti?nullCatalogMeansCurrent=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    url: jdbc:mysql://127.0.0.1:3306/activiti?nullCatalogMeansCurrent=true&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
     username: root
     password: rootroot
 
@@ -57,3 +57,7 @@ logging:
     # 注意：写自己的 mapper 所在完整包名
     com.grey.workflow.mapper: debug
 
+mybatis-plus:
+  type-aliases-package: com.grey.workflow.entities
+  # xxxMapper.xml 路径
+  mapper-locations: classpath*:com/grey/workflow/mapper/**/*.xml

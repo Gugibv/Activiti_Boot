@@ -19,7 +19,7 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `mxg_leave`;
 CREATE TABLE `mxg_leave` (
-  `id` varchar(255) NOT NULL COMMENT '主键ID',
+  `id` varchar(60) NOT NULL COMMENT '主键ID',
   `username` varchar(40) DEFAULT NULL COMMENT '申请人用户名',
   `duration` double(7,2) DEFAULT NULL COMMENT '请假时长，单位：天',
   `principal` varchar(50) DEFAULT NULL COMMENT '工作委托人',
@@ -29,8 +29,8 @@ CREATE TABLE `mxg_leave` (
   `leave_reason` varchar(1000) DEFAULT NULL COMMENT '请假原因',
   `start_date` datetime DEFAULT NULL COMMENT '请假开始时间',
   `end_date` datetime DEFAULT NULL COMMENT '请假开始时间',
-  `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_date` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `create_date` datetime  COMMENT '创建时间',
+  `update_date` datetime   COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='请假业务表';
 
@@ -43,15 +43,15 @@ CREATE TABLE `mxg_leave` (
 -- ----------------------------
 DROP TABLE IF EXISTS `mxg_loan`;
 CREATE TABLE `mxg_loan` (
-  `id` varchar(255) NOT NULL COMMENT '主键ID',
+  `id` varchar(60) NOT NULL COMMENT '主键ID',
   `user_id` varchar(40) CHARACTER SET latin1 DEFAULT '' COMMENT '申请人ID',
   `nick_name` varchar(40) DEFAULT NULL COMMENT '申请人昵称',
   `money` double(15,2) DEFAULT NULL COMMENT '借款金额',
   `purpose` varchar(1000) DEFAULT NULL COMMENT '借款用途',
   `remark` varchar(1000) DEFAULT NULL COMMENT '备注',
   `loan_date` datetime DEFAULT NULL COMMENT '借款日期',
-  `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_date` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `create_date` datetime  COMMENT '创建时间',
+  `update_date` datetime   COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='借款业务表';
 
@@ -67,8 +67,8 @@ CREATE TABLE `mxg_business_status` (
   `business_key` varchar(60) NOT NULL COMMENT '业务ID',
   `process_instance_id` varchar(60) DEFAULT NULL COMMENT '流程实例ID',
   `status` tinyint(3) DEFAULT NULL COMMENT '状态',
-  `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_date` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `create_date` datetime  COMMENT '创建时间',
+  `update_date` datetime   COMMENT '更新时间',
   PRIMARY KEY (`business_key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='业务状态实体表';
 
@@ -81,8 +81,8 @@ CREATE TABLE `mxg_process_config` (
   `process_key` varchar(60) DEFAULT NULL COMMENT '流程定义KEY',
   `business_route` varchar(100) DEFAULT NULL COMMENT '业务申请路由名',
   `form_name` varchar(100) DEFAULT NULL COMMENT '关联表单组件名',
-  `create_date` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `update_date` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `create_date` datetime  COMMENT '创建时间',
+  `update_date` datetime   COMMENT '更新时间',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='流程定义配置表';
 

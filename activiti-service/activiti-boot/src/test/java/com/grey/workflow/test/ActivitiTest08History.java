@@ -128,7 +128,7 @@ public class ActivitiTest08History {
             System.out.println("流程实例未结束或不存在");
             return;
         }
-        // 2. 删除已结束流程实例(如果实例未结束，会抛出异常，如果需要删除，参考com.mengxuegu.workflow.test.ActivitiTest05ProcessInstance.deleteProcInst）
+        // 2. 删除已结束流程实例(如果实例未结束，会抛出异常，如果需要删除，参考com.grey.workflow.test.ActivitiTest05ProcessInstance.deleteProcInst）
         historyService.deleteHistoricProcessInstance(procInstId);
     }
 
