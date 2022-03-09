@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement // 开启事务管理
-@MapperScan("com.grey.wofkflow.mapper")  // 扫描mapper接口
+@MapperScan("com.grey.workflow.mapper")  // 扫描mapper接口
 @Configuration
 public class MyBatisPlusConfig {
     /**

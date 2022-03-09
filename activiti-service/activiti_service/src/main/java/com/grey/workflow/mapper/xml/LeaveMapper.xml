@@ -22,8 +22,8 @@
     </resultMap>
 
     <select id="getLeaveAndStatusList" resultMap="LeaveAndStatusList">
-        SELECT t1.*, t2.* FROM mxg_leave t1
-        LEFT JOIN mxg_business_status t2
+        SELECT t1.*, t2.* FROM klb_leave t1
+        LEFT JOIN klb_business_status t2
         ON t1.id = t2.business_key
         WHERE t1.username = #{req.username}
         <if test="req.title != null and req.title != ''">

@@ -19,8 +19,8 @@
     </resultMap>
 
     <select id="getLoanAndStatusList" resultMap="LoanAndStatusList">
-        SELECT t1.*, t2.* FROM mxg_loan t1
-        LEFT JOIN mxg_business_status t2
+        SELECT t1.*, t2.* FROM klb_loan t1
+        LEFT JOIN klb_business_status t2
         ON t1.id = t2.business_key
         WHERE t1.user_id = #{req.username}
         <if test="req.purpose != null and req.purpose != ''">

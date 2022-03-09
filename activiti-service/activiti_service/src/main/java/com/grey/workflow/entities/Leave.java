@@ -17,7 +17,7 @@ import java.util.Date;
 
 @Data
 @ApiModel("请假申请实体")
-@TableName("mxg_leave")
+@TableName("klb_leave")
 public class Leave implements Serializable {
 
     @TableId(value = "id", type = IdType.ASSIGN_ID)

@@ -15,10 +15,10 @@ File Encoding         : 65001
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for mxg_leave
+-- Table structure for klb_leave
 -- ----------------------------
-DROP TABLE IF EXISTS `mxg_leave`;
-CREATE TABLE `mxg_leave` (
+DROP TABLE IF EXISTS `klb_leave`;
+CREATE TABLE `klb_leave` (
   `id` varchar(60) NOT NULL COMMENT '主键ID',
   `username` varchar(40) DEFAULT NULL COMMENT '申请人用户名',
   `duration` double(7,2) DEFAULT NULL COMMENT '请假时长，单位：天',
@@ -35,14 +35,14 @@ CREATE TABLE `mxg_leave` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='请假业务表';
 
 -- ----------------------------
--- Records of mxg_leave
+-- Records of klb_leave
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for mxg_loan
+-- Table structure for klb_loan
 -- ----------------------------
-DROP TABLE IF EXISTS `mxg_loan`;
-CREATE TABLE `mxg_loan` (
+DROP TABLE IF EXISTS `klb_loan`;
+CREATE TABLE `klb_loan` (
   `id` varchar(60) NOT NULL COMMENT '主键ID',
   `user_id` varchar(40) CHARACTER SET latin1 DEFAULT '' COMMENT '申请人ID',
   `nick_name` varchar(40) DEFAULT NULL COMMENT '申请人昵称',
@@ -56,14 +56,14 @@ CREATE TABLE `mxg_loan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='借款业务表';
 
 -- ----------------------------
--- Records of mxg_loan
+-- Records of klb_loan
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for mxg_business_status
+-- Table structure for klb_business_status
 -- ----------------------------
-DROP TABLE IF EXISTS `mxg_business_status`;
-CREATE TABLE `mxg_business_status` (
+DROP TABLE IF EXISTS `klb_business_statusklb_business_status`;
+CREATE TABLE `klb_business_status` (
   `business_key` varchar(60) NOT NULL COMMENT '业务ID',
   `process_instance_id` varchar(60) DEFAULT NULL COMMENT '流程实例ID',
   `status` tinyint(3) DEFAULT NULL COMMENT '状态',
@@ -73,10 +73,10 @@ CREATE TABLE `mxg_business_status` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='业务状态实体表';
 
 -- ----------------------------
--- Table structure for mxg_process_config
+-- Table structure for klb_process_config
 -- ----------------------------
-DROP TABLE IF EXISTS `mxg_process_config`;
-CREATE TABLE `mxg_process_config` (
+DROP TABLE IF EXISTS `klb_process_config`;
+CREATE TABLE `klb_process_config` (
   `id` varchar(60) NOT NULL COMMENT '主键id',
   `process_key` varchar(60) DEFAULT NULL COMMENT '流程定义KEY',
   `business_route` varchar(100) DEFAULT NULL COMMENT '业务申请路由名',
@@ -87,7 +87,7 @@ CREATE TABLE `mxg_process_config` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='流程定义配置表';
 
 -- ----------------------------
--- Records of mxg_process_config
+-- Records of klb_process_config
 -- ----------------------------
 
 -- ----------------------------

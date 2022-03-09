@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Data
 @ApiModel("流程定义配置实体")
-@TableName("mxg_process_config")
+@TableName("klb_process_config")
 public class ProcessConfig implements Serializable {
 
     @TableId(value = "id", type = IdType.ASSIGN_ID)

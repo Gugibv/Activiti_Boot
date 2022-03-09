@@ -16,7 +16,7 @@ import java.util.Date;
 
 @Data
 @ApiModel("借款申请实体")
-@TableName("mxg_loan")
+@TableName("klb_loan")
 public class Loan implements Serializable {
 
     @TableId(value = "id", type = IdType.ASSIGN_ID)

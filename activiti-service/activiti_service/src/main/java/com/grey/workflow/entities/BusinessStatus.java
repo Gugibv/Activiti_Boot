@@ -11,7 +11,7 @@ import java.util.Date;
 
 @Data
 @ApiModel("业务状态关系实体")
-@TableName("mxg_business_status")
+@TableName("klb_business_status")
 public class BusinessStatus implements Serializable {
 
     @TableId

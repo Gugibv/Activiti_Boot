@@ -1,4 +1,4 @@
-package com.grey.workflow.test.enums;
+package com.grey.workflow;
 
 import com.grey.workflow.enums.BusinessStatusEnum;
 import org.junit.jupiter.api.Test;
