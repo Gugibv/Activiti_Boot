@@ -1,7 +1,7 @@
 {
   "name": "mengxuegu-activiti7-web",
   "version": "4.2.1",
-  "author": "mengxuegu",
+  "author": "zhan",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",

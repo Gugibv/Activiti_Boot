@@ -3,7 +3,7 @@
         <el-form v-loading="loading" :rules="rules" ref="formData" :model="formData"  size="mini"  status-icon>
             <el-form-item label="请输入审批人用户名" prop="assignees" label-width="150px">
                 <el-input type="text" v-model.trim="formData.assignees" maxlength="100" show-word-limit></el-input>
-                <div>可输入用户名：【mengxuegu,meng,xue,gu】</div>
+                <div>可输入用户名：【zhan,meng,xue,gu】</div>
                 <div>可同时指定多个用户（用英文逗号分隔）</div>
             </el-form-item>
             <el-form-item align="center">

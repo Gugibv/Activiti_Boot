@@ -104,6 +104,12 @@ CREATE TABLE `sys_user` (
   UNIQUE KEY `username` (`username`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
+-- 如果报错如下：
+-- ### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'VERSION_' in 'field list'
+ALTER TABLE ACT_RE_DEPLOYMENT ADD COLUMN VERSION_ VARCHAR(255);
+ALTER TABLE ACT_RE_DEPLOYMENT ADD COLUMN PROJECT_RELEASE_VERSION_ VARCHAR(255);
+
+
 -- ----------------------------
 -- Records of sys_user  password:123456
 -- ----------------------------
