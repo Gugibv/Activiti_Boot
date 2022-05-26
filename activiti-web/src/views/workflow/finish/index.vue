@@ -67,7 +67,7 @@ export default {
             list: [
                 {
                     "processInstanceId":"fc6176cb-e232-11eb-8cf6-2c337a6d7e1d",
-                    "proposer":"mengxuegu",
+                    "proposer":"zhan",
                     "businessKey":"1414169550256177154",
                     "processKey":"leaveProcess",
                     "startTime":"2021-07-11 18:30:17",

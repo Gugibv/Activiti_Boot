@@ -80,22 +80,22 @@ export default {
               {
                     "processInstanceId":"7d0d444e",
                     "processStatus":"已启动",
-                    "proposer":"mengxuegu",
+                    "proposer":"zhan",
                     "businessKey":"1414149",
                     "processKey":"leaveProcess",
                     "startTime":"2021-07-11 17:22:18",
-                    "currTaskInfo":"任务名【直接领导审批】，办理人【mengxuegu】<br>",
+                    "currTaskInfo":"任务名【直接领导审批】，办理人【zhan】<br>",
                     "version":2,
                     "processInstanceName":"请假流程"
                 },
                 {
                     "processInstanceId":"50a0eb91",
                     "processStatus":"已启动",
-                    "proposer":"mengxuegu",
+                    "proposer":"zhan",
                     "businessKey":"1414147",
                     "processKey":"leaveProcess",
                     "startTime":"2021-07-11 16:59:35",
-                    "currTaskInfo":"任务名【部门经理审批】，办理人【mengxuegu】<br>任务名【直接领导审批】，办理人【mengxuegu】<br>",
+                    "currTaskInfo":"任务名【部门经理审批】，办理人【zhan】<br>任务名【直接领导审批】，办理人【zhan】<br>",
                     "version":2,
                     "processInstanceName":"请假流程"
                 },

@@ -1,6 +1,5 @@
 package com.grey.workflow.controller;
 
-import com.baomidou.mybatisplus.extension.api.R;
 import com.grey.workflow.entities.ProcessConfig;
 import com.grey.workflow.service.IProcessConfigService;
 import com.grey.workflow.utils.Result;
